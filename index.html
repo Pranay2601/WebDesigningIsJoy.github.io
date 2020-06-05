@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Profrea</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			 function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+		</script>
+		<link rel="stylesheet" type="text/css" href="index2.css">
+    </head>
+    <body>
+    	<nav class="nav navbar-fixed-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="https://www.profrea.com/" class="navbar-brand">PROFREA</a>
+				</div>
+				<div class="collapse navbar-collapse" id="mynavBar">
+					 <ul class="nav navbar-nav">
+                        <li class="active"><a href="PROFREA.html">About Yourself</a></li>
+                        <li><a href="contactinfo.html">Contact info</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="preview.html">Preview</a></li>
+                      </ul>
+				</div>
+			</div>
+		</nav>
+
+			<div class="container panel-margin">
+				<div class="panel-heading">	
+		          <h2> Basic Info </h2>
+		        </div>
+		    </div>
+
+				<div>
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="name">Name:</label>
+							<div class="col-sm-5">
+							<input type="text" class="form-control" name="name" placeholder="First" required>
+							</div>
+							<div class="col-sm-5">
+							<input type="text" class="form-control" name="name" placeholder="Last" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class ="photo" for="photo">Profile Photo:</label>
+							<br>
+							<div class="col-sm-6">
+							<input type="file" class="form-control1"                      onchange="readURL(this);" required>
+						    </div>
+						    <div class="col-sm-5">
+                            <img id="blah" src="https://image.shutterstock.com/image-vector/user-sign-icon-person-symbol-260nw-230288827.jpg" alt="your image" />
+                            </div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="Email">Email:</label>
+							<div class="col-sm-5">
+							<input type="email" class="form-control" name="Email" placeholder="Email" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="DOB">DOB:</label>
+							<div class="col-sm-5">
+							<input type="date" class="form-control" name="DOB" placeholder="DOB" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-1" for="Contact">Contact:</label>
+							<div class="col-sm-5">
+							<input type="numbers" class="form-control" name="Contact" placeholder="no."  pattern = "[0-9]{10}" required>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-11">
+						<a class="btn btn-primary" href="contactinfo.html" role="button">Next</a>
+					    </div>
+					</form>
+				</div>
+			
+	
+		
