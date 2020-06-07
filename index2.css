@@ -58,3 +58,9 @@ body{
 .page-header{
 	margin-top: 50px;
 }
+#upload{
+	background-color: grey;
+}
+#smile{
+	align-content: center;
+}
